@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="spacingVertical">8dp</dimen>
+    <dimen name="spacingTitleVerticalTop">24dp</dimen>
+    <dimen name="spacingTitleVerticalBottom">16dp</dimen>
+    <dimen name="spacingHorizontal">32dp</dimen>
+    <dimen name="logo">80dp</dimen>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="titleSize">24sp</dimen>
+</resources>

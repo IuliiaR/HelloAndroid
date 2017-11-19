@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.helloandroid.MainActivity">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+        <RelativeLayout
+            android:layout_height="300dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:id="@+id/backgroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/backgroundDescription"
+                android:src="@drawable/background_image"/>
+
+            <ImageView
+                android:id="@+id/companyLogoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/logo"
+                android:layout_marginHorizontal="@dimen/margin"
+                android:contentDescription="@string/udacityLogoDescription"
+                android:src="@drawable/udacity_logo_white"/>
+
+            <TextView
+                android:id="@+id/text1View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/spacingVertical"
+                android:layout_below="@id/companyLogoImage"
+                android:layout_centerHorizontal="true"
+                android:text="@string/slogan1"
+                android:textSize="@dimen/textSize"
+                android:textStyle="bold"
+                android:textColor="@color/colorSlogan"/>
+
+            <TextView
+                android:id="@+id/text2View"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/text1View"
+                android:text="@string/slogan2"
+                android:textSize="@dimen/titleSize"
+                android:fontFamily="sans-serif-light"
+                android:textAllCaps="true"
+                android:textColor="@color/colorSlogan"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="@dimen/margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacingTitleVerticalTop"
+                android:layout_marginBottom="@dimen/spacingTitleVerticalBottom"
+                android:textSize="@dimen/titleSize"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/companyName"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/spacingVertical"
+                android:text="@string/companyAddress"
+                android:textSize="@dimen/textSize"
+                android:autoLink="map"
+                android:drawableLeft="@drawable/map_marker"
+                android:drawablePadding="@dimen/spacingHorizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/spacingVertical"
+                android:textSize="@dimen/textSize"
+                android:text="@string/companyPhone"
+                android:autoLink="phone"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="@dimen/spacingHorizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/spacingVertical"
+                android:textSize="@dimen/textSize"
+                android:text="@string/companyWebsite"
+                android:autoLink="web"
+                android:drawableLeft="@drawable/web"
+                android:drawablePadding="@dimen/spacingHorizontal"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
